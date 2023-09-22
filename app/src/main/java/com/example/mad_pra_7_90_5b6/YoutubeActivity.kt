@@ -22,13 +22,12 @@ class YoutubeActivity : AppCompatActivity() {
 
         }
     }
-    private val youtubeId = "fJn9B64Znrk"
     private  fun initYoutubePlayer()
     {
         val webSeettings: WebSettings = binding.youtubeWebView.settings
         webSeettings.javaScriptEnabled = true
         webSeettings.loadWithOverviewMode = true
         webSeettings.useWideViewPort = true
-        binding.youtubeWebView.loadUrl("https://www.youtube.com/embed/$youtubeId")
+        binding.youtubeWebView.loadUrl("https://www.youtube.com/watch?v=IXApgh2CrcU")
     }
 }
